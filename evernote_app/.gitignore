@@ -1,0 +1,6 @@
+post_blog_app/log.html
+post_blog_app/output.xml
+post_blog_app/report.html
+
+./.vscode
+./site.db
