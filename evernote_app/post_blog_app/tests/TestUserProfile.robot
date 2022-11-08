@@ -30,7 +30,12 @@ T103 Verify Successful Login to EverNote
     Page Should Contain    Logged in Succesfully !
     Click Button    css:button[class="close"]
 
-T105 Test User Profile Update
+T105 Test to check User join date
+    [Documentation]    This test case will check wheather the user date is marked on the profile or not
+    Click Link    Account
+    Page Should Contain    Joined on :
+
+T106 Test User Profile Update
     [Documentation]    This test case is to check wheather user can update their name or not on the profile.
     Click Link    Account
     Input Text    id:username    ram
