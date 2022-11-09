@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.8 on darwin)" generated="20221109 18:26:56.133" rpa="false" schemaversion="3">
+<suite id="s1" name="HomePage" source="/Users/kabili/pyproject/assignment-final-charles/evernote_app/post_blog_app/tests/HomePage.robot">
+<kw name="Go to Website" type="SETUP">
+<doc>This test case verify user can visit the Website</doc>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${Broswer}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221109 18:26:56.371" level="INFO">Opening browser 'chrome' to base url 'http://127.0.0.1:5000'.</msg>
+<status status="PASS" starttime="20221109 18:26:56.370" endtime="20221109 18:26:59.377"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Welcome to EverNote</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221109 18:26:59.394" level="INFO">Current page contains text 'Welcome to EverNote'.</msg>
+<status status="PASS" starttime="20221109 18:26:59.378" endtime="20221109 18:26:59.395"/>
+</kw>
+<status status="PASS" starttime="20221109 18:26:56.369" endtime="20221109 18:26:59.396"/>
+</kw>
+<test id="s1-t1" name="T101 Homepage Link test_Evernote" line="16">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:26:59.400" endtime="20221109 18:26:59.401"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>EverNote</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221109 18:26:59.403" level="INFO">Clicking link 'EverNote'.</msg>
+<status status="PASS" starttime="20221109 18:26:59.402" endtime="20221109 18:26:59.849"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Welcome to EverNote</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221109 18:27:00.069" level="INFO">Current page contains text 'Welcome to EverNote'.</msg>
+<status status="PASS" starttime="20221109 18:26:59.849" endtime="20221109 18:27:00.070"/>
+</kw>
+<doc>Go to EverNote Page</doc>
+<status status="PASS" starttime="20221109 18:26:59.397" endtime="20221109 18:27:00.072"/>
+</test>
+<test id="s1-t2" name="T102 Homepage Link test_Home" line="21">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:00.078" endtime="20221109 18:27:00.079"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Home</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:00.081" level="INFO">Clicking link 'Home'.</msg>
+<status status="PASS" starttime="20221109 18:27:00.080" endtime="20221109 18:27:00.456"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Welcome to EverNote</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221109 18:27:00.676" level="INFO">Current page contains text 'Welcome to EverNote'.</msg>
+<status status="PASS" starttime="20221109 18:27:00.457" endtime="20221109 18:27:00.678"/>
+</kw>
+<doc>Go to Home Page</doc>
+<status status="PASS" starttime="20221109 18:27:00.075" endtime="20221109 18:27:00.679"/>
+</test>
+<test id="s1-t3" name="T103 Homepage Link test_POST" line="26">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:00.685" endtime="20221109 18:27:00.687"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:00.689" level="INFO">Clicking link 'Posts'.</msg>
+<status status="PASS" starttime="20221109 18:27:00.688" endtime="20221109 18:27:01.104"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://127.0.0.1:5000/posts</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221109 18:27:01.213" level="INFO">Current location is 'http://127.0.0.1:5000/posts'.</msg>
+<status status="PASS" starttime="20221109 18:27:01.105" endtime="20221109 18:27:01.214"/>
+</kw>
+<doc>Go to Post Page</doc>
+<status status="PASS" starttime="20221109 18:27:00.682" endtime="20221109 18:27:01.215"/>
+</test>
+<test id="s1-t4" name="T103 Homepage Link test_Account" line="31">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:01.220" endtime="20221109 18:27:01.221"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Account</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:01.222" level="INFO">Clicking link 'Account'.</msg>
+<status status="PASS" starttime="20221109 18:27:01.222" endtime="20221109 18:27:01.611"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://127.0.0.1:5000/login?next=%2Faccount</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221109 18:27:01.720" level="INFO">Current location is 'http://127.0.0.1:5000/login?next=%2Faccount'.</msg>
+<status status="PASS" starttime="20221109 18:27:01.611" endtime="20221109 18:27:01.721"/>
+</kw>
+<doc>Go to Account Page (guest mode)</doc>
+<status status="PASS" starttime="20221109 18:27:01.217" endtime="20221109 18:27:01.722"/>
+</test>
+<test id="s1-t5" name="T104 Homepage Link test_Log in" line="36">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:01.727" endtime="20221109 18:27:01.729"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Login</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:01.730" level="INFO">Clicking link 'Login'.</msg>
+<status status="PASS" starttime="20221109 18:27:01.729" endtime="20221109 18:27:02.125"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://127.0.0.1:5000/login</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221109 18:27:02.232" level="INFO">Current location is 'http://127.0.0.1:5000/login'.</msg>
+<status status="PASS" starttime="20221109 18:27:02.126" endtime="20221109 18:27:02.233"/>
+</kw>
+<doc>Go to Log in Page (guest mode)</doc>
+<status status="PASS" starttime="20221109 18:27:01.724" endtime="20221109 18:27:02.234"/>
+</test>
+<test id="s1-t6" name="T105 Homepage Link test_Register" line="41">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:02.240" endtime="20221109 18:27:02.242"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Register</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:02.244" level="INFO">Clicking link 'Register'.</msg>
+<status status="PASS" starttime="20221109 18:27:02.243" endtime="20221109 18:27:02.625"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://127.0.0.1:5000/register</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221109 18:27:02.730" level="INFO">Current location is 'http://127.0.0.1:5000/register'.</msg>
+<status status="PASS" starttime="20221109 18:27:02.625" endtime="20221109 18:27:02.731"/>
+</kw>
+<doc>Go to Register Page (guest mode)</doc>
+<status status="PASS" starttime="20221109 18:27:02.236" endtime="20221109 18:27:02.732"/>
+</test>
+<test id="s1-t7" name="T106 Homepage Link test_twitter" line="46">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:02.737" endtime="20221109 18:27:02.738"/>
+</kw>
+<kw name="Click Outer-Link Image">
+<arg>Twitter Logo</arg>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${image_name}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:02.741" level="INFO">Clicking image 'Twitter Logo'.</msg>
+<status status="PASS" starttime="20221109 18:27:02.740" endtime="20221109 18:27:03.117"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:03.118" endtime="20221109 18:27:03.552"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:02.739" endtime="20221109 18:27:03.554"/>
+</kw>
+<kw name="Outer Link Contain">
+<arg>https://twitter.com/SatabrataYo</arg>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>${image_url}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20221109 18:27:04.939" level="INFO">Current location contains 'https://twitter.com/SatabrataYo'.</msg>
+<status status="PASS" starttime="20221109 18:27:03.556" endtime="20221109 18:27:04.940"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:03.555" endtime="20221109 18:27:04.940"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Main</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:04.941" endtime="20221109 18:27:05.264"/>
+</kw>
+<doc>Go to twitter Page</doc>
+<status status="PASS" starttime="20221109 18:27:02.734" endtime="20221109 18:27:05.265"/>
+</test>
+<test id="s1-t8" name="T107 Homepage Link test_Linkedin" line="52">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:05.268" endtime="20221109 18:27:05.268"/>
+</kw>
+<kw name="Click Outer-Link Image">
+<arg>Linkedin Logo</arg>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${image_name}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:05.270" level="INFO">Clicking image 'Linkedin Logo'.</msg>
+<status status="PASS" starttime="20221109 18:27:05.270" endtime="20221109 18:27:05.614"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:05.615" endtime="20221109 18:27:06.044"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:05.269" endtime="20221109 18:27:06.045"/>
+</kw>
+<kw name="Outer Link Contain">
+<arg>https://www.linkedin.com/</arg>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>${image_url}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20221109 18:27:06.964" level="INFO">Current location contains 'https://www.linkedin.com/'.</msg>
+<status status="PASS" starttime="20221109 18:27:06.046" endtime="20221109 18:27:06.965"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:06.045" endtime="20221109 18:27:06.965"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Main</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:06.966" endtime="20221109 18:27:07.300"/>
+</kw>
+<doc>This is to go to linkedin Page</doc>
+<status status="PASS" starttime="20221109 18:27:05.266" endtime="20221109 18:27:07.300"/>
+</test>
+<test id="s1-t9" name="T108 Homepage Link test_Facebook" line="58">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:07.303" endtime="20221109 18:27:07.303"/>
+</kw>
+<kw name="Click Outer-Link Image">
+<arg>Facebook Logo</arg>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${image_name}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:07.305" level="INFO">Clicking image 'Facebook Logo'.</msg>
+<status status="PASS" starttime="20221109 18:27:07.305" endtime="20221109 18:27:07.641"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:07.642" endtime="20221109 18:27:08.069"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:07.304" endtime="20221109 18:27:08.070"/>
+</kw>
+<kw name="Outer Link Contain">
+<arg>https://www.facebook.com/satabrata.paul</arg>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>${image_url}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20221109 18:27:10.480" level="INFO">Current location contains 'https://www.facebook.com/satabrata.paul'.</msg>
+<status status="PASS" starttime="20221109 18:27:08.072" endtime="20221109 18:27:10.480"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:08.071" endtime="20221109 18:27:10.480"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Main</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:10.481" endtime="20221109 18:27:10.806"/>
+</kw>
+<doc>This is to go to Facebook Page</doc>
+<status status="PASS" starttime="20221109 18:27:07.301" endtime="20221109 18:27:10.807"/>
+</test>
+<test id="s1-t10" name="T109 Homepage Link test_Github" line="64">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:10.813" endtime="20221109 18:27:10.814"/>
+</kw>
+<kw name="Click Outer-Link Image">
+<arg>Github-logo</arg>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>${image_name}</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:10.817" level="INFO">Clicking image 'Github-logo'.</msg>
+<status status="PASS" starttime="20221109 18:27:10.816" endtime="20221109 18:27:11.167"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>New</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:11.168" endtime="20221109 18:27:11.595"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:10.814" endtime="20221109 18:27:11.596"/>
+</kw>
+<kw name="Outer Link Contain">
+<arg>https://github.com/SatabrataPaul-GitAc/EverNote_application</arg>
+<kw name="Location Should Contain" library="SeleniumLibrary">
+<arg>${image_url}</arg>
+<doc>Verifies that the current URL contains ``expected``.</doc>
+<msg timestamp="20221109 18:27:13.443" level="INFO">Current location contains 'https://github.com/SatabrataPaul-GitAc/EverNote_application'.</msg>
+<status status="PASS" starttime="20221109 18:27:11.598" endtime="20221109 18:27:13.443"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:11.597" endtime="20221109 18:27:13.444"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>Main</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221109 18:27:13.445" endtime="20221109 18:27:13.767"/>
+</kw>
+<doc>This is to go to Github Page</doc>
+<status status="PASS" starttime="20221109 18:27:10.810" endtime="20221109 18:27:13.768"/>
+</test>
+<test id="s1-t11" name="T110 Homepage Link test_latest posts in Navigator" line="70">
+<kw name="Set Selenium Speed" library="SeleniumLibrary" type="SETUP">
+<arg>0.1 seconds</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20221109 18:27:13.771" endtime="20221109 18:27:13.772"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>Latest Posts</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20221109 18:27:13.773" level="INFO">Clicking link 'Latest Posts'.</msg>
+<status status="PASS" starttime="20221109 18:27:13.773" endtime="20221109 18:27:14.150"/>
+</kw>
+<kw name="Location Should Be" library="SeleniumLibrary">
+<arg>http://127.0.0.1:5000/evernote/latestposts</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<msg timestamp="20221109 18:27:14.259" level="INFO">Current location is 'http://127.0.0.1:5000/evernote/latestposts'.</msg>
+<status status="PASS" starttime="20221109 18:27:14.151" endtime="20221109 18:27:14.260"/>
+</kw>
+<status status="PASS" starttime="20221109 18:27:13.769" endtime="20221109 18:27:14.261"/>
+</test>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221109 18:27:14.264" endtime="20221109 18:27:14.429"/>
+</kw>
+<doc>Website Test</doc>
+<status status="PASS" starttime="20221109 18:26:56.137" endtime="20221109 18:27:14.429"/>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="11" fail="0" skip="0" id="s1" name="HomePage">HomePage</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
