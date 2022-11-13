@@ -2,28 +2,26 @@
 Documentation       Website Test
 
 Library             SeleniumLibrary
-
 Suite Setup         Go to Website
-#Suite Teardown    Close Browser
-Task Setup          Set Selenium Speed    0.3 seconds
+Suite Teardown    Close Browser
+Task Setup          Set Selenium Speed    0.1 seconds
 
 
 *** Variables ***
 ${URL}          http://127.0.0.1:5000
 ${Broswer}      chrome
 
-
 *** Test Cases ***
-T101 Homepage Link test_Evernote
-    [Documentation]    This is to go to EverNote Page
-    Click Link    EverNote
+T101 Homepage Link test_Home
+    [Documentation]    Go to Home Page
+    Click Link    Home
     Page Should Contain    Welcome to EverNote
 
-T102 Homepage Link test_Posts
-    [Documentation]    This is to go to EverNote Page
+T102 Homepage Link test_guest_user_post_page
+    [Documentation]    Go to Post Page
     Click Link    Posts
-    Page Should Contain    BLOG POSTS !!!
-    Close Browser
+    Location Should Be    http://127.0.0.1:5000/posts
+
 
 
 *** Keywords ***

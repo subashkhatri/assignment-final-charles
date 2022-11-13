@@ -25,22 +25,22 @@ T102 Homepage Link test_Home
 T103 Homepage Link test_POST
     [Documentation]    Go to Post Page
     Click Link    Posts
-    Location Should Be    http://127.0.0.1:5000/posts
+    Location Should Be   ${URL}/posts
 
 T103 Homepage Link test_Account
     [Documentation]    Go to Account Page (guest mode)
     Click Link    Account
-    Location Should Be    http://127.0.0.1:5000/login?next=%2Faccount
+    Location Should Be   ${URL}/login?next=%2Faccount
 
 T104 Homepage Link test_Log in
     [Documentation]    Go to Log in Page (guest mode)
     Click Link    Login
-    Location Should Be    http://127.0.0.1:5000/login
+    Location Should Be   ${URL}/login
 
 T105 Homepage Link test_Register
     [Documentation]    Go to Register Page (guest mode)
     Click Link    Register
-    Location Should be    http://127.0.0.1:5000/register
+    Location Should be   ${URL}/register
 
 T106 Homepage Link test_twitter
     [Documentation]    Go to twitter Page
@@ -57,7 +57,7 @@ T107 Homepage Link test_Linkedin
 T108 Homepage Link test_Facebook
     [Documentation]    This is to go to Facebook Page
     Click Outer-Link Image    Facebook Logo
-    Outer Link Contain  https://www.facebook.com/satabrata.paul 
+    Outer Link Contain  https://www.facebook.com/satabrata.paul
     Switch Window  Main
 
 T109 Homepage Link test_Github
@@ -66,9 +66,6 @@ T109 Homepage Link test_Github
     Outer Link Contain  https://github.com/SatabrataPaul-GitAc/EverNote_application
     Switch Window  Main
 
-T110 Homepage Link test_latest posts in Navigator
-    Click Link    Latest Posts
-    Location Should Be    http://127.0.0.1:5000/evernote/latestposts
 
 *** Keywords ***
 Go to Website
@@ -77,7 +74,7 @@ Go to Website
     Page Should Contain    Welcome to EverNote
 
 Click Outer-Link Image
-    [Arguments]  ${image_name}   
+    [Arguments]  ${image_name}
     Click image  ${image_name}
     switch window  New
 
