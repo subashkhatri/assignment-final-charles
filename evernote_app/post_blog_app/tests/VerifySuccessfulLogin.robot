@@ -14,7 +14,7 @@ ${Broswer}      chrome
 
 
 *** Test Cases ***
-T103 Verify Successful Login to EverNote
+T101 Verify Successful Login to EverNote
     [Documentation]    This test case verifies that user is able to successfully login to the evernote app
     Click Link    Login
     Page Should Contain    Log In
