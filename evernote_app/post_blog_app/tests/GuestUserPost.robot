@@ -4,7 +4,7 @@ Documentation       Website Test
 Library             SeleniumLibrary
 Suite Setup         Go to Website
 Suite Teardown    Close Browser
-Task Setup          Set Selenium Speed    0.1 seconds
+Task Setup          Set Selenium Speed    0.3 seconds
 
 
 *** Variables ***
