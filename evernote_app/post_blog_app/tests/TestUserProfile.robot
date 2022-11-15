@@ -4,8 +4,8 @@ Documentation       Website Test
 Library             SeleniumLibrary
 
 Suite Setup         Go to Website
-#Suite Teardown    Close Browser
-Task Setup          Set Selenium Speed    0.3 seconds
+Suite Teardown      Close Browser
+Task Setup          Set Selenium Speed    0.4 seconds
 
 
 *** Variables ***
@@ -15,10 +15,9 @@ ${Broswer}      chrome
 
 *** Test Cases ***
 T101 Homepage Link test_Evernote
-    [Documentation]    This is to go to EverNote Page
+    [Documentation]    Go to EverNote Page
     Click Link    EverNote
     Page Should Contain    Welcome to EverNote
-
 
 T103 Verify Successful Login to EverNote
     [Documentation]    This test case verifies that user is able to successfully login to the evernote app
@@ -42,6 +41,8 @@ T106 Test User Profile Update
     Click Element    id:submit
     Page Should Contain    Your Account Has Been Updated Successfully !
     Click Button    css:button[class="close"]
+    Close Browser
+
 
 *** Keywords ***
 Go to Website
