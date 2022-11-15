@@ -5,7 +5,7 @@ Library             SeleniumLibrary
 
 Suite Setup         Go to Website
 #Suite Teardown    Close Browser
-Task Setup          Set Selenium Speed    0.3 seconds
+Task Setup          Set Selenium Speed    0.4 seconds
 
 
 *** Variables ***
@@ -14,7 +14,7 @@ ${Broswer}      chrome
 
 
 *** Test Cases ***
-T103 Verify Successful Login to EverNote
+T101 Verify Successful Login to EverNote
     [Documentation]    This test case verifies that user is able to successfully login to the evernote app
     Click Link    Login
     Page Should Contain    Log In
@@ -24,7 +24,7 @@ T103 Verify Successful Login to EverNote
     Page Should Contain    Logged in Succesfully !
     Click Button    css:button[class="close"]
 
-T104 Create New Post
+T102 Create New Post
     [Documentation]    This test case verifies that user can create a post after login
     Page Should Contain    Welcome to EverNote
     Click Link    New Post
@@ -34,8 +34,23 @@ T104 Create New Post
     Click Element    id:submit
     Page Should Contain    Your post has been created !
     Click Button    css:button[class="close"]
-    Close Browser
 
+
+T103 Tetst Logout Button
+   [Documentation]  This test case varifies successful logout
+    Click Link    Logout
+    Location Should Be    ${URL}/home
+
+
+# Kabi's test suite
+T104 Homepage Link test_latest posts in Navigator
+    [Documentation]    Go to Home Page
+    Click Link    Home
+    Page Should Contain    Welcome to EverNote
+
+    Click Link    Latest Posts
+    Location Should Be    ${URL}/evernote/latestposts
+    Close Browser
 
 *** Keywords ***
 Go to Website
